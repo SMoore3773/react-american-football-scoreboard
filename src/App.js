@@ -7,8 +7,10 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   
   const initialState = 0;
+  const initialQ =1;
   const [countH, setCountH] = useState(initialState);
   const [countA, setCountA] = useState(initialState);
+  
   return (
     <div className="container">
       <section className="scoreboard">
@@ -37,6 +39,18 @@ function App() {
         <div className="awayButtons">
           <button onClick={() => setCountA(countA + 7)}className="awayButtons__touchdown">Away Touchdown</button>
           <button onClick={() => setCountA(countA + 3)}className="awayButtons__fieldGoal">Away Field Goal</button>
+        </div>
+        <div className="homeButtons">
+          <button className="homeButtons__touchdown" 
+          // onClick ={() => 
+          //   if(countQ<=4{setCountQ(countQ + 1)}); else{setcountQ(countQ = 1)}
+          //   setCountQ(count + 1)
+          
+          // }
+            >Next Quarter</button>
+          
+          
+        
         </div>
       </section>
     </div>
